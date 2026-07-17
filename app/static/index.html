@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CyberGuide AI is an intelligent security awareness platform for learning digital threats and defensive measures." />
+    <title>CyberGuide AI | Intelligent Security Awareness</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <header class="nav shell">
+      <a class="brand" href="#home" aria-label="CyberGuide AI home">
+        <span class="brand-mark"><img src="/static/cyberguide-logo-lilac.png" alt="" /></span>
+        <span><strong>CyberGuide AI</strong><small>Intelligent Security Awareness Platform</small></span>
+      </a>
+      <nav aria-label="Main navigation"><a href="#domains">Learn</a><a href="#ask">Ask AI</a><a href="#about">About</a></nav>
+      <span class="status"><i></i> AI assistant ready</span>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="aurora one"></div><div class="aurora two"></div>
+        <div class="hero-inner shell">
+          <p class="eyebrow">✦ Learn safer digital habits</p>
+          <h1>Understand cybersecurity.<br /><em>One question at a time.</em></h1>
+          <p class="intro">Explore digital threats, information protection, cloud safety, and practical defensive measures with clear AI-guided learning.</p>
+
+        </div>
+      </section>
+
+      <section class="domains shell" id="domains">
+        <div class="section-heading"><div><span>Explore by domain</span><h2>Build awareness across the digital world</h2></div><p>Select a domain, then ask for an explanation, practical prevention measures, or a quick quiz.</p></div>
+        <div class="domain-grid">
+          <button class="domain" data-domain="Internet Threats" data-prompt="Explain common internet threats and how users can avoid them."><b>◎</b><strong>Internet Threats</strong><small>Phishing, scams and unsafe sites</small></button>
+          <button class="domain" data-domain="Information Security" data-prompt="Teach me the CIA triad and basic information security controls."><b>◈</b><strong>Information Security</strong><small>Confidentiality, integrity and access</small></button>
+          <button class="domain" data-domain="Cloud Security" data-prompt="Explain cloud security risks and the shared responsibility model."><b>☁</b><strong>Cloud Security</strong><small>Identity, data and cloud configuration</small></button>
+          <button class="domain" data-domain="Network Security" data-prompt="Explain the purpose of firewalls, segmentation and secure protocols."><b>⌘</b><strong>Network Security</strong><small>Traffic, devices and connections</small></button>
+          <button class="domain" data-domain="Social Engineering" data-prompt="How can people identify and prevent social engineering attacks?"><b>◇</b><strong>Social Engineering</strong><small>Manipulation, impersonation and fraud</small></button>
+          <button class="domain" data-domain="Malware" data-prompt="Compare viruses, worms, trojans, ransomware and spyware."><b>✳</b><strong>Malware</strong><small>Malicious software and warning signs</small></button>
+          <button class="domain" data-domain="Defensive Measures" data-prompt="Create a practical personal cybersecurity checklist."><b>✓</b><strong>Defensive Measures</strong><small>Prevent, detect, respond and recover</small></button>
+          <button class="domain" data-domain="Cryptography" data-prompt="Explain cryptography, encryption, hashing, and digital signatures with practical examples."><b>⌁</b><strong>Cryptography</strong><small>Encryption, hashing and digital trust</small></button>
+        </div>
+      </section>
+
+      <section class="ask-section shell">
+        <div class="section-heading"><div><span>Ask CyberGuide AI</span><h2>Choose how you want to learn</h2></div><p>Select a topic above or type your own question. The assistant will tailor the depth and format to you.</p></div>
+        <form class="ask-card" id="ask">
+          <div class="settings">
+            <label>Learning level<select id="level"><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></label>
+            <label>Learning mode<select id="mode"><option value="explain">Understand a concept</option><option value="measures">See protection measures</option><option value="quiz">Test your knowledge</option></select></label>
+            <span id="selected-domain">General Security</span>
+          </div>
+          <div class="composer">
+            <span class="spark" aria-hidden="true">✦</span>
+            <label class="sr-only" for="question">Ask a cybersecurity question</label>
+            <textarea id="question" maxlength="1200" rows="2" placeholder="For example: What are the types of network security?" required></textarea>
+            <button id="ask-button" type="submit">Ask AI</button>
+          </div>
+        </form>
+        <section class="answer hidden" id="answer-panel" aria-live="polite">
+          <div class="answer-head"><span class="answer-logo"><img src="/static/cyberguide-logo-lilac.png" alt="" /></span><strong>CyberGuide AI</strong><button id="copy-answer" type="button">Copy</button></div>
+          <div id="answer-text"></div>
+        </section>
+        <p class="trust">◇ Designed for defensive learning and security awareness only</p>
+      </section>
+
+      <section class="about shell" id="about">
+        <span>Purpose-built learning</span><h2>From uncertainty to safer action</h2>
+        <div class="features"><article><i>01</i><h3>Clear explanations</h3><p>Understand complex security concepts at your chosen learning level.</p></article><article><i>02</i><h3>Practical prevention</h3><p>Connect threats with realistic measures and safer digital choices.</p></article><article><i>03</i><h3>Active practice</h3><p>Generate quizzes that reinforce knowledge without enabling harm.</p></article></div>
+      </section>
+    </main>
+    <footer><div class="shell"><strong>CyberGuide AI</strong><span>Security knowledge for a safer digital world.</span><small>Educational and defensive use only.</small></div></footer>
+  </body>
+</html>
